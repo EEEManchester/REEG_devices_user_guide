@@ -38,16 +38,19 @@ Step 1. Connect a host machine with an Ethernet cable and Power it
 <img title="VLP-16 Config" width = 400pt src="./img/velody_16/connect_volydne_laptop.jpg">
 
 Step 2. Set a static IP address of Host machine
+
 <img title="VLP-16 Config" width = 400pt src="./img/velody_16/host_static_ip.png">
 
 Step 3. Set VLP-16
 - Open a browser and input the address ```192.168.131.201``` and should be able to see a page like below
-    <img title="VLP-16 Config" width = 500pt src="./img/velody_16/config_VLP16.png">
+
+<img title="VLP-16 Config" width = 500pt src="./img/velody_16/config_VLP16.png">
 
   The address depends on your sensor, the one in our team has a label saying ```192.168.131.201```.
 - We can set motor RPM here depending on what horizontal resolution we want (see [1.1 Veldoy specifications](##1.1-veldoy-specifications)), and here is set to be 600 which results into 0.2d.
 - We need to specify the IP address and the port (2368 here) of host machine and and chick ```set``` and it is also possible to modify the IP address of VLP-16 that is in section *Network (sensor)*
-    <img title="VLP-16 Config" width = 500pt src="./img/velody_16/host_setting.png">
+
+<img title="VLP-16 Config" width = 500pt src="./img/velody_16/host_setting.png">
 
 Now, we have finished setting the host machine's IP address and port to receive sensor data, the IP address and the RPM of VLP-16.
 
@@ -67,7 +70,7 @@ Step 2. Clone and build ROS2 driver
     ```
 - Configure velodyne pkg 
     - go to ```velodyne_driver/config``` and modify ```VLP16-velodyne_driver_node-params.yaml```
-     <img title="VLP-16 Config" src="./img/velody_16/ros2_pkg_seting.png">
+    <img title="VLP-16 Config" src="./img/velody_16/ros2_pkg_seting.png">
     - set parameters
         - ```device_ip``` to be the IP of Velodyne ```192.168.131.201```
         - ```rpm``` and ```port```  should be what we set before in [Configure vlp](###1.2.1-configure-VLP-16), which is ```600.0``` and ```2368```.

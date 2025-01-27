@@ -20,13 +20,14 @@ Author: zhongmou.li@manchester.ac.uk
 - Horizontal field of view: 360d
 - Horizontal resolution: 0.1d - 0.4d depending on LIDAR's RPM
     - 300RPM - 0.1d
-    - 500RPM - 0.2d
+    - 600RPM - 0.2d (**chosen**)
     - 900RPM - 0.3d
     - 1200RPM - 0.4d
     - source: Table 8-1 Rotation Speed vs Resolution in VLP-16 User Manual
 - Minimal LIDAR range
 - Maximal LIDAR range: 100m
 - Range accuracy: <±3 cm 
+- *Horizon_SCAN = 360/0.2=1800*
 
 Source:
 - VLP-16 User Manual, [https://data.ouster.io/downloads/velodyne/user-manual/vlp-16-user-manual-revf.pdf](https://data.ouster.io/downloads/velodyne/user-manual/vlp-16-user-manual-revf.pdf)

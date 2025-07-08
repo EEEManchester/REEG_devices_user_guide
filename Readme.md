@@ -4,7 +4,9 @@
 ### LIDAR
 1. 3D LIDAR
     - [Velody (VLP-16)](velody_16.md)
-
+### Camers
+1. visual camera
+    - [Basker acA1300-60gmNIR](aca1300.md)
 
 ### IMU
 1. 9-axis IMU

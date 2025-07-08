@@ -14,7 +14,7 @@ Author: zhongmou.li@manchester.ac.uk
 
 
 
-## 2 Veldoy specifications
+## 2 Velody specifications
 - Model : VLP-16
 - Number of channels: 16
 - Horizontal field of view: 360d
@@ -92,3 +92,6 @@ Step 2. Clone and build ROS2 driver
     - add PointCloud2 with ```velodyne_points``` 
 
     <img title="VLP-16 Config" src="./img/velody_16/rivz2.png">
+
+
+Step 3. Frame direction of Veloydne

@@ -5,8 +5,11 @@
 1. 3D LIDAR
     - [Velody (VLP-16)](velody_16.md)
 ### Camers
+0. calibrate cameras
+   - [ros2 ca,aera calibration](ros2_cam_cali.md)
 1. visual camera
     - [Basker acA1300-60gmNIR](aca1300.md)
+
 
 ### IMU
 1. 9-axis IMU
@@ -16,6 +19,8 @@
 ### SLAM
 1. LIO-SAM
 
+### Others
+1. [AprilTag](arpiltag.md)
 ## 3. Robot
 1. Husky clearpath
     - [simulation](huksy_sim.md)

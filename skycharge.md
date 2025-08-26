@@ -125,7 +125,7 @@ Remember, the monitor should be alwasys running to obtain the information
     skycharge-cli monitor --pretty #in the server on the source
 ```
 
-Once the connection is established, we should see the status of charging system become `precharging`, which means the skycharge system ie preparing to charge the battery.
+Once the connection is established, we should see the status of charging system become `precharging`, which means the skycharge system is preparing to charge the battery.
 
 <img title="ssh_skycharge" width = 800pt src="./img/skycharge/skycharge_precharge.png">
 

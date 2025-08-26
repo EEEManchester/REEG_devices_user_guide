@@ -11,10 +11,11 @@
 ### IMU
 1. 9-axis IMU
     - [3DM-GX5-25](imu_3dm_gx5_25.md)
+    - [3DM-Gv7-AHRS](imu_3dm_gv7_AHRS.md)
 
 ## 2. Algorithms
 ### SLAM
-1. LIO-SAM
+1. [LIO-SAM](https://github.com/ZhongmouLi/ZLIOSAM)
 
 ## 3. Robot
 1. Husky clearpath

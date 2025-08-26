@@ -70,6 +70,6 @@ Then, the device will be detected as ```/dev/microstrain_main``` automatically. 
    
 4. launch the driver by running      
 
-   ```bash
+```bash
       ros2 launch microstrain_inertial_examples cv7_launch.py
-   ```
+```

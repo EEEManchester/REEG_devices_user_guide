@@ -3,7 +3,7 @@
 ## 1. Sensors
 ### LIDAR
 1. 3D LIDAR
-    - [Velody (VLP-16)](velody_16.md)
+    - [Velodyne (VLP-16)](velodyne_16.md)
 ### Camera
 0. calibrate cameras
    - [ros2 calibration](ros2_cam_cali.md)

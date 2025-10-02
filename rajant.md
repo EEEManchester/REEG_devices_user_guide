@@ -76,3 +76,4 @@ The IP addresses are set to be in the same subnet as following:
 - a white node (ES) is `192.168.131.211`
 - a base station is `192.168.131.11`
 
+With same DDS and same `ROS_DOMAIN_ID`, then the drone onboard computer can talk to the base station.

@@ -1,0 +1,51 @@
+
+# Camera calibration
+## 1 Kit components
+Author: zhongmou.li@manchester.ac.uk
+
+**Kit**
+- ros-<ros2-distro>-camera-calibration (apt pkg)
+- [Pattern Generator](https://calib.io/pages/camera-calibration-pattern-generator) 
+- 
+**Host machine**
+- Ubuntu 22.04
+- ROS2 Humble
+  
+
+**Reference**
+- [Nav2, Camera Calibration](https://docs.nav2.org/tutorials/docs/camera_calibration.html)
+- [Offline Camera Calibration in ROS 2](https://medium.com/starschema-blog/offline-camera-calibration-in-ros-2-45e81df12555)
+  
+## 2 Install ROS2 camera calibration pkg
+```bash
+    sudo apt install ros-humble-camera-calibration-parsers
+    sudo apt install ros-humble-camera-info-manager
+    sudo apt install ros-humble-launch-testing-ament-cmake
+```
+and build a pkg from source 
+```bash
+    cd ros_ws/src #replace it with yours
+    git clone -b humble https://github.com/ros-perception/image_pipeline
+    cd ros_ws
+    colcon build
+```
+
+## 3. Get chestboard
+1.  use [https://calib.io/pages/camera-calibration-pattern-generator](https://calib.io/pages/camera-calibration-pattern-generator) to generate a checkerboard.
+
+  <img title="VLP-16 Config" 
+    src="./img/cam_cali/checkerboard_generator.png">
+
+Following the suggestions at [Offline Camera Calibration in ROS 2](https://medium.com/starschema-blog/offline-camera-calibration-in-ros-2-45e81df12555), for a A4/US letter page, I choose an 7x12 board with 20mm squares. 
+
+
+## 4. Calibration
+NOTE there: even we choose the size of board as 7x12, in calibration we use the interior corners as the size, therefore the size in calibration is 6x11. 
+```bash
+    ros2 run camera_calibration cameracalibrator --size 6x11 --square 0.02 --ros-args --remap image:=/camera1/image_raw --ros-args --remap camera:=/camera1
+```
+  <img title="checkerboad in calibration" 
+    src="./img/cam_cali/calibrate_checkerboard.png">
+
+Here is the command to calibrate Basler camera 
+```bash

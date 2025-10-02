@@ -1,9 +1,9 @@
-# Velody 3D Lidar (VLP-16)
+# Velodyne 3D Lidar (VLP-16)
 ## 1 Kit components
 Author: zhongmou.li@manchester.ac.uk
 
 **Kit**
-- Velody (VLP-16 PUCK)
+- Velodyne (VLP-16 PUCK)
 - Power module
 - Ethernet cable 
 <img title="VLP-16 Config" src="./img/velody_16/velodyne_kit.jpg">
@@ -14,7 +14,7 @@ Author: zhongmou.li@manchester.ac.uk
 
 
 
-## 2 Veldoy specifications
+## 2 Velodyne specifications
 - Model : VLP-16
 - Number of channels: 16
 - Horizontal field of view: 360d
@@ -92,3 +92,6 @@ Step 2. Clone and build ROS2 driver
     - add PointCloud2 with ```velodyne_points``` 
 
     <img title="VLP-16 Config" src="./img/velody_16/rivz2.png">
+
+
+Step 3. Frame direction of Veloydne

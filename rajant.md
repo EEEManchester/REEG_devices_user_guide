@@ -7,6 +7,21 @@ Author: zhongmou.li@manchester.ac.uk
 - Ethernet cable **(cat 6)**
 - Injector AC/DC
 
+<figure>
+  <img width="600" src="./img/rajant/node_blue_DS.jpg" alt="Rajant node DX">
+  <figcaption>Rajant node DX</figcaption>
+</figure>
+
+<figure>
+  <img width="600" src="./img/rajant/node_white_ES.jpg" alt="Rajant node ES">
+  <figcaption>Rajant node ES</figcaption>
+</figure>
+
+<figure>
+  <img width="600" src="./img/rajant/injectors.jpg" alt="Injectors">
+  <figcaption>DC injector and AC injector</figcaption>
+</figure>
+
 
 **Host machine**
 - Ubuntu 22.04
@@ -20,7 +35,7 @@ One example using a AC injector is given here. Connect the AC injector with powe
 
 <img width = 600pt  src="./img/rajant/node_connection_injector.jpg">
 
-Then, connect the injector to the computer with another Ethernet Cable. **It is not fully tested, but Ethernect cables cat 5 cause instable connection, while cat 6 ones have no problems like that.**
+Then, connect the injector to the computer with another Ethernet Cable. **It is not fully tested, but Ethernet cables cat 5 cause unstable connection, while cat 6 ones have no problems like that.**
 
 <img width = 600pt  src="./img/rajant/node_connection_computer.jpg">
 
@@ -68,12 +83,19 @@ Then, set the IP address of this Rajent node.
 All the nodes used and the devices in the same network must share the same subnet. For instance, their IP address must have the same format like 192.68.131.XXX with the subnet being 255.255.255.0.
 
 ## 2. ROS2 communication with Rajant nodes and computers
-Static IP addresses are hightly recommended. Take the devices in CORAL for example.
+Static IP addresses are highly recommended. Take the devices in CORAL for example.
 
 The IP addresses are set to be in the same subnet as following:
 - a blue node (DX) is `192.168.131.111`
-- an drone onbard computer is `192.168.131.101`
+- an drone onboard computer is `192.168.131.101`
 - a white node (ES) is `192.168.131.211`
 - a base station is `192.168.131.11`
 
 With same DDS and same `ROS_DOMAIN_ID`, then the drone onboard computer can talk to the base station.
+
+<figure>
+  <img width="600" src="./img/rajant/rajant_connection.png" alt="Rajant mesh network schematic">
+  <figcaption>Rajant mesh network schematic</figcaption>
+</figure>
+
+Until now, with the connection with Rajant nodes, the drone onboard computer and the base station can achieve ROS2 communication through mesh network.

@@ -9,13 +9,16 @@
    - [ros2 calibration](ros2_cam_cali.md)
 1. visual camera
     - [Basker acA1300-60gmNIR](aca1300.md)
-
-
+    - 
 ### IMU
 1. 9-axis IMU
     - [3DM-GX5-25](imu_3dm_gx5_25.md)
     - [3DM-Gv7-AHRS](imu_3dm_gv7_AHRS.md)
 
+
+### Network
+1. [Rajant nodes](rajant.md)
+   
 ## 2. Algorithms
 ### SLAM
 1. [LIO-SAM](https://github.com/ZhongmouLi/ZLIOSAM)

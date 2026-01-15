@@ -4,6 +4,7 @@
 ### LIDAR
 1. 3D LIDAR
     - [Velodyne (VLP-16)](velodyne_16.md)
+    - [Ouster (OS1-32-U)](os1_32_u.md)
 ### Camera
 0. calibrate cameras
    - [ros2 calibration](ros2_cam_cali.md)

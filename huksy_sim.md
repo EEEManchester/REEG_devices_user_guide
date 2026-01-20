@@ -12,7 +12,7 @@ Commands to test
 ```
 We can use teleop_twist_keyboard to control the robot with keyboard. Only thing to be carefly is to map topics to the one set by clearpath.
 ```shell
-  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=a200_0000/cmd_vel
+  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/a200_0471/cmd_vel
 ```
 ### 1.2 choose different robots
 We can use different clearpath robots by modifying robot.yaml file in ```~/clearpath```. An example is given as bellow:

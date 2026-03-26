@@ -10,7 +10,7 @@ Robot Husky kit include
 
 
 Especially, the charger needs an adapter
-<img title="VLP-16 Config" width = 500pt src="./img/husky/husky_charger.jpg">
+<img title="VLP-16 Config" width = 500pt src="./img/husky/husky_char
 
 ## 2 Charge and operate Husky
 ### 2.1 Charge Husky
